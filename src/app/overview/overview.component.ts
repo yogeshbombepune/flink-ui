@@ -15,7 +15,9 @@ export class OverviewComponent implements OnInit {
   constructor(private overviewService: OverviewCommonService) {   }
 
   ngOnInit(): void {
-    this.overview = this.overviewService.getOverview('http://192.168.56.110:8081/overview').subscribe();
+    // this.overview = this.overviewService
+    //   .getOverview('http://192.168.56.110:8081/overview')
+    //   .subscribe( );
     this.overviewService.updatedOverview.subscribe((overview: OverviewModel) => {
        console.log('OverviewComponent ngOnInit call');
        this.overview = overview;

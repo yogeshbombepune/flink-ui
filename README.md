@@ -28,3 +28,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ng add @fortawesome/angular-fontawesome
+
+http://192.168.56.110:8081/overview
+{"taskmanagers":2,"slots-total":4,"slots-available":0,"jobs-running":1,"jobs-finished":0,"jobs-cancelled":0,"jobs-failed":0,"flink-version":"1.10.0","flink-commit":"aa4eb8f"}
+
+http://192.168.56.110:8081/jobs/overview
+{"jobs":[{"jid":"efaa4ab9e20ba48899caed3f6ad98ba6","name":"Streaming Kafka Record","state":"RUNNING","start-time":1589374230452,"end-time":-1,"duration":1234830,"last-modification":1589374233838,"tasks":{"total":4,"created":0,"scheduled":0,"deploying":0,"running":4,"finished":0,"canceling":0,"canceled":0,"failed":0,"reconciling":0}}]}
