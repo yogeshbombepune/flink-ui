@@ -6,13 +6,14 @@ import { JobsComponent } from './jobs/jobs.component';
 import { RunningComponent } from './jobs/running/running.component';
 import { CompletedComponent } from './jobs/completed/completed.component';
 import { OverviewResolveServiceService } from './overview/overview-resolve-service.service';
+import { JobListResolverService } from './overview/job-list-resolver.service';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/home/overview', pathMatch: 'full'},
   { path: 'home', component: HomeComponent, children: [
     { path: '', redirectTo: 'overview', pathMatch: 'prefix'},
-    { path: 'overview', component: OverviewComponent, resolve: [OverviewResolveServiceService] },
+    { path: 'overview', component: OverviewComponent, resolve: [OverviewResolveServiceService, JobListResolverService] },
     { path: 'jobs', component: JobsComponent, children: [
       { path: 'running', component: RunningComponent},
       { path: 'completed', component: CompletedComponent}

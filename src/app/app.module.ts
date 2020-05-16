@@ -14,6 +14,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { JobsComponent } from './jobs/jobs.component';
 import { RunningComponent } from './jobs/running/running.component';
 import { CompletedComponent } from './jobs/completed/completed.component';
+import { JobListComponent } from './overview/job-list/job-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CompletedComponent } from './jobs/completed/completed.component';
     HeaderComponent,
     JobsComponent,
     RunningComponent,
-    CompletedComponent
+    CompletedComponent,
+    JobListComponent
   ],
   imports: [
     BrowserModule,

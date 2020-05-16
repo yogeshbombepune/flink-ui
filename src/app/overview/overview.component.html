@@ -1,4 +1,5 @@
 <div class="row">
+
   <div class="col-md-6">
     <div class="card">
       <div class="card-header bg-transparent">Available Task Slots</div>
@@ -9,17 +10,9 @@
         <div class="row">
           <div class="col-md-6">
             <h6>Total Task Slots <span class="badge badge-info">{{ overview?.slotsTotal}}</span></h6>
-            <!-- <div class="btn btn-info">
-              Total Task Slots <span class="badge badge-light">{{ overview?.slotsTotal}}</span>
-              <span class="sr-only">unread messages</span>
-            </div> -->
           </div>
           <div class="col-md-6">
             <h6>Task Managers <span class="badge badge-info">{{ overview?.taskmanagers}}</span></h6>
-            <!-- <div class="btn btn-info">
-              Task Managers <span class="badge badge-light">{{ overview?.taskmanagers}}</span>
-              <span class="sr-only">unread messages</span>
-            </div> -->
           </div>
         </div>
       </div>
@@ -36,50 +29,17 @@
         <div class="row">
           <div class="col-md-4">
             <h6>Finished <span class="badge badge-info">{{ overview?.jobsFinished}}</span></h6>
-            <!-- <div class="btn btn-info">
-              Finished <span class="badge badge-light">{{overview?.jobsFinished}}</span>
-              <span class="sr-only">unread messages</span>
-            </div> -->
           </div>
           <div class="col-md-4">
             <h6>Canceled <span class="badge badge-info">{{ overview?.jobsCancelled}}</span></h6>
-            <!-- <div class="btn btn-info">
-              Canceled <span class="badge badge-light">{{overview?.jobsCancelled}}</span>
-            </div> -->
-
           </div>
           <div class="col-md-4">
             <h6>Failed <span class="badge badge-info">{{ overview?.jobsFailed}}</span></h6>
-            <!-- <div class="btn btn-info">
-              Failed <span class="badge badge-light">{{overview?.jobsFailed}}</span>
-              <span class="sr-only">unread messages</span>
-            </div> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <br>
-<div class="row">
-  <div class="col-md-12">
-    <div class="card">
-      <div class="card-header bg-transparent">Running Job List</div>
-      <!-- <div class="card-body text-success">
-        <h1 class="card-title">{{overview?.jobsRunning}}</h1>
-      </div> -->
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-12">
-    <div class="card">
-      <div class="card-header bg-transparent">Completed Job List</div>
-      <!-- <div class="card-body text-success">
-        <h1 class="card-title">{{overview?.jobsRunning}}</h1>
-      </div> -->
-    </div>
-  </div>
-</div>
+<app-job-list [jobs]='jobs'></app-job-list>
